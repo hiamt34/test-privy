@@ -1,0 +1,33 @@
+{
+  "name": "privy-blockchain-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Privy documentation and Node.js implementation for testing Privy tools",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start:mcp": "node src/mcp-server/index.js",
+    "test:transaction": "node src/test-transaction/index.js",
+    "api:balance": "node src/api/get-wallet-balance.js",
+    "api:balance-multi": "node src/api/get-balance-multiple-chains.js",
+    "api:balance-asset": "node src/api/get-balance-by-asset.js",
+    "api:withdraw-sepolia": "node src/api/withdraw-eth-sepolia.js",
+    "api:swap": "node src/api/swap-token-bebop.js"
+  },
+  "keywords": [
+    "privy",
+    "blockchain",
+    "mcp",
+    "ethereum"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@privy-io/node": "^0.6.0",
+    "@privy-io/server-auth": "^1.12.0",
+    "axios": "^1.13.2",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1"
+  }
+}
